@@ -1,0 +1,38 @@
+{
+  "name": "hypernova-server-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:client": "LIB_NAME=client vite build",
+    "build:server": "LIB_NAME=server vite build",
+    "dev": "vite serve",
+    "start": "node dist/server.js",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^2.2.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-airbnb": "^2.5.3",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "nodemon-webpack-plugin": "^4.0.7",
+    "rollup-plugin-terser": "^7.0.2",
+    "vite": "^3.2.5",
+    "vite-plugin-html": "^3.2.0",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "hypernova": "^2.5.0",
+    "hypernova-react": "^2.1.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
+}
